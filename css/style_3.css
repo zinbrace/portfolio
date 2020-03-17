@@ -1,0 +1,207 @@
+header{
+    background: #60b0f4 ;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    flex-direction: column;
+    }
+footer{
+    background-color: #60b0f4;
+    color: black;
+    padding: 15px;
+    text-align: center;
+  }
+ul {
+    background-color: #60b0f4;
+}
+h1{
+    color:black;
+    background-color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 5px #60b0f4;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: right;
+    padding: 12px 12px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li:nth-child(3){
+    border: 5px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+li a:hover {
+    border-color: rgba(96,176,244,.5);
+}
+#my_logo{
+    min-height: 130px;
+    min-width: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    align-self: center;
+    animation: fadein 4s 1;
+}
+#contact{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+}
+a.maincontent{
+    left:-999px;
+    position:absolute;
+    overflow:hidden;
+    z-index:-900;
+}
+a.maincontent:focus{
+    background:rgba(96,176,244,.5);;
+    color:white;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    margin: 15px;
+    padding:5px;
+    z-index:900;
+}
+p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+.container{
+    margin: 30px 180px 30px 180px;
+    border: 5px solid  #60b0f4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    background-color: #60b0f4;
+    color: black;
+    border-radius: 20px;
+}
+label{
+    display: block;
+    padding: 5px 0px 0px 0px;
+}
+textarea, input{
+    display: block;
+    width: 75%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#submit{
+    text-transform: uppercase;
+    width: auto;
+    background: white ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    color: black;
+}
+#happy{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+    background: white;
+    padding-bottom: 20px;
+}
+.flip-card{
+    color:black;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.front, .back{
+    position: absolute;
+    background: white;
+    backface-visibility: hidden;
+    width: 200px;
+    height: 200px;
+    top:0;
+    left:0;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.flip-card:focus,.flip-card:hover{
+    transform: rotateY(180deg);
+}
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    .container img {
+      animation: none;
+    }
+  }
+@media screen and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+    li:nth-child(3){
+        border: 0px;
+    }
+    #my_logo{
+        margin-top: 35px;
+        margin-bottom: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+@media screen and (min-device-width: 1025px) and (max-device-width: 1600px) { 
+    li:nth-child(3){
+        border: none;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#60b0f4;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        opacity: .5;
+      }
+      
+}
